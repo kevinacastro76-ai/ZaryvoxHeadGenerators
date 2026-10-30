@@ -5,6 +5,11 @@ settings:
   drop-velocity-down: true
   sell-command-enabled: true
   currency-symbol: '$'
+head-stacking:
+  enabled: true
+  max-stack-size: 64
+  compare-textures: true
+  separate-normal-special: true
 messages:
   prefix: '&8[&5Zaryvox&8] '
   no-head: '&cNo tienes una cabeza de generador en la mano.'
