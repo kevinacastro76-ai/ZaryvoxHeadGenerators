@@ -1,4 +1,3 @@
-
 package com.zaryvox.headgenerators;
 
 import net.milkbowl.vault.economy.Economy;
