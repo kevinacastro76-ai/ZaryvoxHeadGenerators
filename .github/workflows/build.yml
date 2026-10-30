@@ -2,9 +2,9 @@ name: Build ZaryvoxHeadGenerators
 
 on:
   push:
-    branches: [ "main", "master" ]
+    branches: ["main", "master"]
   pull_request:
-    branches: [ "main", "master" ]
+    branches: ["main", "master"]
   workflow_dispatch:
 
 permissions:
@@ -36,8 +36,7 @@ jobs:
       - name: Upload plugin JAR
         uses: actions/upload-artifact@v4
         with:
-          name: ZaryvoxHeadGenerators-1.0.0
+          name: ZaryvoxHeadGenerators-1.0.2
           path: build/libs/*.jar
           if-no-files-found: error
           retention-days: 14
-          
