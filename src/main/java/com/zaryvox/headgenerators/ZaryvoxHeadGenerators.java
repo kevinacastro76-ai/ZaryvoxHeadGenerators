@@ -117,7 +117,7 @@ public final class ZaryvoxHeadGenerators extends JavaPlugin implements Listener 
         if (!texture.isEmpty()) {
             try {
                 PlayerProfile profile = Bukkit.createPlayerProfile(UUID.randomUUID());
-                profile.setProperty(new ProfileProperty("textures", texture));
+                profile.getProperties().add(new ProfileProperty("textures", texture));
                 meta.setOwnerProfile(profile);
             } catch (Exception ex) {
                 getLogger().warning("Textura inválida en " + path + ".texture: " + ex.getMessage());
@@ -184,5 +184,4 @@ public final class ZaryvoxHeadGenerators extends JavaPlugin implements Listener 
         player.sendMessage(color(getConfig().getString("messages.prefix", "") + getConfig().getString("messages.sold", ""))
                 .replace("%amount%", String.valueOf(amount)).replace("%money%", symbol + String.format(Locale.US, "%.2f", total)));
     }
-  }
-          
+}
