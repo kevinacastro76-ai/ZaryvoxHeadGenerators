@@ -1,0 +1,722 @@
+# ZaryvoxHeadGenerators - Purpur 1.20.4 / ItemGenerators 1.2
+settings:
+  special-chance-percent: 15.0
+  normal-chance-percent: 85.0
+  drop-velocity-down: true
+  sell-command-enabled: true
+  currency-symbol: '$'
+messages:
+  prefix: '&8[&5Zaryvox&8] '
+  no-head: '&cNo tienes una cabeza de generador en la mano.'
+  sold: '&aVendiste &f%amount% &acabeza(s) por &e%money%.'
+  reloaded: '&aConfiguración recargada.'
+  no-economy: '&cVault/economía no está disponible.'
+  invalid: '&cUso: /zhg <reload|sellhand|sellall>'
+# Cada nivel necesita dos texturas Base64 (propiedad textures).
+# Puedes pegar el valor Base64 de una textura de cabeza en normal.texture y special.texture.
+# Mientras estén vacías, el plugin usa una cabeza de jugador sin textura personalizada.
+tiers:
+  1:
+    resource: 'WHEAT'
+    display-name: '&d&dTrigo'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dTrigo'
+      lore:
+        - '&7Recurso: &f&dTrigo'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dTrigo'
+      lore:
+        - '&7Recurso: &f&dTrigo'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  2:
+    resource: 'MELON_SLICE'
+    display-name: '&d&dMelón'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dMelón'
+      lore:
+        - '&7Recurso: &f&dMelón'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dMelón'
+      lore:
+        - '&7Recurso: &f&dMelón'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  3:
+    resource: 'COAL'
+    display-name: '&d&dCarbón'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dCarbón'
+      lore:
+        - '&7Recurso: &f&dCarbón'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dCarbón'
+      lore:
+        - '&7Recurso: &f&dCarbón'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  4:
+    resource: 'COAL_BLOCK'
+    display-name: '&d&dBloque de carbón'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dBloque de carbón'
+      lore:
+        - '&7Recurso: &f&dBloque de carbón'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dBloque de carbón'
+      lore:
+        - '&7Recurso: &f&dBloque de carbón'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  5:
+    resource: 'IRON_INGOT'
+    display-name: '&d&dHierro'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dHierro'
+      lore:
+        - '&7Recurso: &f&dHierro'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dHierro'
+      lore:
+        - '&7Recurso: &f&dHierro'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  6:
+    resource: 'IRON_BLOCK'
+    display-name: '&d&dBloque de hierro'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dBloque de hierro'
+      lore:
+        - '&7Recurso: &f&dBloque de hierro'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dBloque de hierro'
+      lore:
+        - '&7Recurso: &f&dBloque de hierro'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  7:
+    resource: 'GOLD_INGOT'
+    display-name: '&d&dOro'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dOro'
+      lore:
+        - '&7Recurso: &f&dOro'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dOro'
+      lore:
+        - '&7Recurso: &f&dOro'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  8:
+    resource: 'GOLD_BLOCK'
+    display-name: '&d&dBloque de oro'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dBloque de oro'
+      lore:
+        - '&7Recurso: &f&dBloque de oro'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dBloque de oro'
+      lore:
+        - '&7Recurso: &f&dBloque de oro'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  9:
+    resource: 'REDSTONE'
+    display-name: '&d&dRedstone'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dRedstone'
+      lore:
+        - '&7Recurso: &f&dRedstone'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dRedstone'
+      lore:
+        - '&7Recurso: &f&dRedstone'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  10:
+    resource: 'REDSTONE_BLOCK'
+    display-name: '&d&dBloque de redstone'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dBloque de redstone'
+      lore:
+        - '&7Recurso: &f&dBloque de redstone'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dBloque de redstone'
+      lore:
+        - '&7Recurso: &f&dBloque de redstone'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  11:
+    resource: 'LAPIS_LAZULI'
+    display-name: '&d&dLapislázuli'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dLapislázuli'
+      lore:
+        - '&7Recurso: &f&dLapislázuli'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dLapislázuli'
+      lore:
+        - '&7Recurso: &f&dLapislázuli'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  12:
+    resource: 'LAPIS_BLOCK'
+    display-name: '&d&dBloque de lapislázuli'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dBloque de lapislázuli'
+      lore:
+        - '&7Recurso: &f&dBloque de lapislázuli'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dBloque de lapislázuli'
+      lore:
+        - '&7Recurso: &f&dBloque de lapislázuli'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  13:
+    resource: 'DIAMOND'
+    display-name: '&d&dDiamante'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dDiamante'
+      lore:
+        - '&7Recurso: &f&dDiamante'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dDiamante'
+      lore:
+        - '&7Recurso: &f&dDiamante'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  14:
+    resource: 'DIAMOND_BLOCK'
+    display-name: '&d&dBloque de diamante'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dBloque de diamante'
+      lore:
+        - '&7Recurso: &f&dBloque de diamante'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dBloque de diamante'
+      lore:
+        - '&7Recurso: &f&dBloque de diamante'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  15:
+    resource: 'EMERALD'
+    display-name: '&d&dEsmeralda'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dEsmeralda'
+      lore:
+        - '&7Recurso: &f&dEsmeralda'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dEsmeralda'
+      lore:
+        - '&7Recurso: &f&dEsmeralda'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  16:
+    resource: 'EMERALD_BLOCK'
+    display-name: '&d&dBloque de esmeralda'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dBloque de esmeralda'
+      lore:
+        - '&7Recurso: &f&dBloque de esmeralda'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dBloque de esmeralda'
+      lore:
+        - '&7Recurso: &f&dBloque de esmeralda'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  17:
+    resource: 'NETHERRACK'
+    display-name: '&d&dNetherrack'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dNetherrack'
+      lore:
+        - '&7Recurso: &f&dNetherrack'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dNetherrack'
+      lore:
+        - '&7Recurso: &f&dNetherrack'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  18:
+    resource: 'QUARTZ'
+    display-name: '&d&dCuarzo del Nether'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dCuarzo del Nether'
+      lore:
+        - '&7Recurso: &f&dCuarzo del Nether'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dCuarzo del Nether'
+      lore:
+        - '&7Recurso: &f&dCuarzo del Nether'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  19:
+    resource: 'GOLD_NUGGET'
+    display-name: '&d&dOro del Nether'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dOro del Nether'
+      lore:
+        - '&7Recurso: &f&dOro del Nether'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dOro del Nether'
+      lore:
+        - '&7Recurso: &f&dOro del Nether'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  20:
+    resource: 'NETHER_BRICK'
+    display-name: '&d&dLadrillos del Nether'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dLadrillos del Nether'
+      lore:
+        - '&7Recurso: &f&dLadrillos del Nether'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dLadrillos del Nether'
+      lore:
+        - '&7Recurso: &f&dLadrillos del Nether'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  21:
+    resource: 'NETHER_WART'
+    display-name: '&d&dVerruga del Nether'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dVerruga del Nether'
+      lore:
+        - '&7Recurso: &f&dVerruga del Nether'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dVerruga del Nether'
+      lore:
+        - '&7Recurso: &f&dVerruga del Nether'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  22:
+    resource: 'OBSIDIAN'
+    display-name: '&d&dObsidiana'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dObsidiana'
+      lore:
+        - '&7Recurso: &f&dObsidiana'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dObsidiana'
+      lore:
+        - '&7Recurso: &f&dObsidiana'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  23:
+    resource: 'CRYING_OBSIDIAN'
+    display-name: '&d&dObsidiana llorosa'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dObsidiana llorosa'
+      lore:
+        - '&7Recurso: &f&dObsidiana llorosa'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dObsidiana llorosa'
+      lore:
+        - '&7Recurso: &f&dObsidiana llorosa'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  24:
+    resource: 'WITHER_ROSE'
+    display-name: '&d&dRosa de Wither'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dRosa de Wither'
+      lore:
+        - '&7Recurso: &f&dRosa de Wither'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dRosa de Wither'
+      lore:
+        - '&7Recurso: &f&dRosa de Wither'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  25:
+    resource: 'BRICK'
+    display-name: '&d&dLadrillo'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dLadrillo'
+      lore:
+        - '&7Recurso: &f&dLadrillo'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dLadrillo'
+      lore:
+        - '&7Recurso: &f&dLadrillo'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  26:
+    resource: 'QUARTZ'
+    display-name: '&d&dBloque de cuarzo'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dBloque de cuarzo'
+      lore:
+        - '&7Recurso: &f&dBloque de cuarzo'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dBloque de cuarzo'
+      lore:
+        - '&7Recurso: &f&dBloque de cuarzo'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  27:
+    resource: 'GLOWSTONE_DUST'
+    display-name: '&d&dPiedra luminosa'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dPiedra luminosa'
+      lore:
+        - '&7Recurso: &f&dPiedra luminosa'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dPiedra luminosa'
+      lore:
+        - '&7Recurso: &f&dPiedra luminosa'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  28:
+    resource: 'MAGMA_CREAM'
+    display-name: '&d&dBloque de magma'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dBloque de magma'
+      lore:
+        - '&7Recurso: &f&dBloque de magma'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dBloque de magma'
+      lore:
+        - '&7Recurso: &f&dBloque de magma'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  29:
+    resource: 'BASALT'
+    display-name: '&d&dBasalto'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dBasalto'
+      lore:
+        - '&7Recurso: &f&dBasalto'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dBasalto'
+      lore:
+        - '&7Recurso: &f&dBasalto'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  30:
+    resource: 'BLACKSTONE'
+    display-name: '&d&dPiedra negra'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dPiedra negra'
+      lore:
+        - '&7Recurso: &f&dPiedra negra'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dPiedra negra'
+      lore:
+        - '&7Recurso: &f&dPiedra negra'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  31:
+    resource: 'POLISHED_BLACKSTONE_BRICKS'
+    display-name: '&d&dLadrillos de piedra negra pulida'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dLadrillos de piedra negra pulida'
+      lore:
+        - '&7Recurso: &f&dLadrillos de piedra negra pulida'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dLadrillos de piedra negra pulida'
+      lore:
+        - '&7Recurso: &f&dLadrillos de piedra negra pulida'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  32:
+    resource: 'SOUL_SAND'
+    display-name: '&d&dArena de almas'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dArena de almas'
+      lore:
+        - '&7Recurso: &f&dArena de almas'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dArena de almas'
+      lore:
+        - '&7Recurso: &f&dArena de almas'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  33:
+    resource: 'SOUL_SOIL'
+    display-name: '&d&dTierra de almas'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dTierra de almas'
+      lore:
+        - '&7Recurso: &f&dTierra de almas'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dTierra de almas'
+      lore:
+        - '&7Recurso: &f&dTierra de almas'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  34:
+    resource: 'END_STONE'
+    display-name: '&d&dPiedra del End'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dPiedra del End'
+      lore:
+        - '&7Recurso: &f&dPiedra del End'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dPiedra del End'
+      lore:
+        - '&7Recurso: &f&dPiedra del End'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  35:
+    resource: 'PURPUR_BLOCK'
+    display-name: '&d&dBloque purpur'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dBloque purpur'
+      lore:
+        - '&7Recurso: &f&dBloque purpur'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dBloque purpur'
+      lore:
+        - '&7Recurso: &f&dBloque purpur'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  36:
+    resource: 'CHORUS_FRUIT'
+    display-name: '&d&dFruta chorus'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dFruta chorus'
+      lore:
+        - '&7Recurso: &f&dFruta chorus'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dFruta chorus'
+      lore:
+        - '&7Recurso: &f&dFruta chorus'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  37:
+    resource: 'PRISMARINE_SHARD'
+    display-name: '&d&dPrismarina'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dPrismarina'
+      lore:
+        - '&7Recurso: &f&dPrismarina'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dPrismarina'
+      lore:
+        - '&7Recurso: &f&dPrismarina'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  38:
+    resource: 'PRISMARINE_SHARD'
+    display-name: '&d&dPrismarina oscura'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dPrismarina oscura'
+      lore:
+        - '&7Recurso: &f&dPrismarina oscura'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dPrismarina oscura'
+      lore:
+        - '&7Recurso: &f&dPrismarina oscura'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  39:
+    resource: 'PRISMARINE_CRYSTALS'
+    display-name: '&d&dLinterna marina'
+    normal:
+      texture: ''
+      name: '&fCabeza de &dLinterna marina'
+      lore:
+        - '&7Recurso: &f&dLinterna marina'
+        - '&7Calidad: &aNormal'
+      sell-price: 10.0
+    special:
+      texture: ''
+      name: '&6&lCabeza especial de &dLinterna marina'
+      lore:
+        - '&7Recurso: &f&dLinterna marina'
+        - '&7Calidad: &6Especial'
+        - '&eUna pieza poco común de Zaryvox'
+      sell-price: 15.0
+  40:
+    resource:
