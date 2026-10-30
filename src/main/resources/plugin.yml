@@ -1,0 +1,16 @@
+name: ZaryvoxHeadGenerators
+version: 1.0.0
+main: com.zaryvox.headgenerators.ZaryvoxHeadGenerators
+api-version: '1.20'
+softdepend: [ItemGenerators, Vault]
+author: Zaryvox Network
+commands:
+  zhg:
+    description: Administración y venta de cabezas de generadores Zaryvox
+    usage: /zhg <reload|sellhand|sellall>
+permissions:
+  zaryvoxheadgenerators.admin:
+    default: op
+  zaryvoxheadgenerators.sell:
+    default: true
+    
